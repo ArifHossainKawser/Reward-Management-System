@@ -1,0 +1,100 @@
+<!DOCTYPE html><html lang="en"><head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>RMS | Reward Management System</title>
+  <base href="/">
+  <!-- favicon ============================================ -->
+  <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.ico">
+  <!-- HandsonTable -->
+  <link type="text/css" rel="stylesheet" href="https://cdn.jsdelivr.net/npm/handsontable@12.2/dist/handsontable.full.min.css">
+  <!-- Prime NG Stylesheet -->
+  <link rel="stylesheet" type="text/css" href="assets/primeicons/primeicons.css" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="assets/primeicons/primeicons.css"></noscript>
+  <!-- <link rel="stylesheet" type="text/css" href="assets/primeng/resources/themes/nova/theme.css" /> -->
+  <style>@charset "UTF-8";:root{--surface-a:#ffffff;--surface-b:#efefef;--surface-c:#e9ecef;--surface-d:#dee2e6;--surface-e:#ffffff;--surface-f:#ffffff;--text-color:#212529;--text-color-secondary:#6c757d;--primary-color:#007bff;--primary-color-text:#ffffff;--font-family:-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;--surface-0:#ffffff;--surface-50:#f9fafb;--surface-100:#f8f9fa;--surface-200:#e9ecef;--surface-300:#dee2e6;--surface-400:#ced4da;--surface-500:#adb5bd;--surface-600:#6c757d;--surface-700:#495057;--surface-800:#343a40;--surface-900:#212529;--gray-50:#f9fafb;--gray-100:#f8f9fa;--gray-200:#e9ecef;--gray-300:#dee2e6;--gray-400:#ced4da;--gray-500:#adb5bd;--gray-600:#6c757d;--gray-700:#495057;--gray-800:#343a40;--gray-900:#212529;--content-padding:1.25rem;--inline-spacing:0.5rem;}*{box-sizing:border-box;}:root{--blue-50:#f3f8ff;--blue-100:#c5dcff;--blue-200:#97c1fe;--blue-300:#69a5fe;--blue-400:#3b8afd;--blue-500:#0d6efd;--blue-600:#0b5ed7;--blue-700:#094db1;--blue-800:#073d8b;--blue-900:#052c65;--green-50:#f4f9f6;--green-100:#c8e2d6;--green-200:#9ccbb5;--green-300:#70b595;--green-400:#459e74;--green-500:#198754;--green-600:#157347;--green-700:#125f3b;--green-800:#0e4a2e;--green-900:#0a3622;--yellow-50:#fffcf3;--yellow-100:#fff0c3;--yellow-200:#ffe494;--yellow-300:#ffd965;--yellow-400:#ffcd36;--yellow-500:#ffc107;--yellow-600:#d9a406;--yellow-700:#b38705;--yellow-800:#8c6a04;--yellow-900:#664d03;--cyan-50:#f3fcfe;--cyan-100:#c5f2fb;--cyan-200:#97e8f9;--cyan-300:#69def6;--cyan-400:#3bd4f3;--cyan-500:#0dcaf0;--cyan-600:#0baccc;--cyan-700:#098da8;--cyan-800:#076f84;--cyan-900:#055160;--pink-50:#fdf5f9;--pink-100:#f5cee1;--pink-200:#eda7ca;--pink-300:#e681b3;--pink-400:#de5a9b;--pink-500:#d63384;--pink-600:#b62b70;--pink-700:#96245c;--pink-800:#761c49;--pink-900:#561435;--indigo-50:#f7f3fe;--indigo-100:#dac6fc;--indigo-200:#bd98f9;--indigo-300:#a06bf7;--indigo-400:#833df4;--indigo-500:#6610f2;--indigo-600:#570ece;--indigo-700:#470ba9;--indigo-800:#380985;--indigo-900:#290661;--teal-50:#f4fcfa;--teal-100:#c9f2e6;--teal-200:#9fe8d2;--teal-300:#75debf;--teal-400:#4ad3ab;--teal-500:#20c997;--teal-600:#1bab80;--teal-700:#168d6a;--teal-800:#126f53;--teal-900:#0d503c;--orange-50:#fff9f3;--orange-100:#ffe0c7;--orange-200:#fec89a;--orange-300:#feaf6d;--orange-400:#fd9741;--orange-500:#fd7e14;--orange-600:#d76b11;--orange-700:#b1580e;--orange-800:#8b450b;--orange-900:#653208;--bluegray-50:#f8f9fb;--bluegray-100:#e0e4ea;--bluegray-200:#c7ced9;--bluegray-300:#aeb9c8;--bluegray-400:#95a3b8;--bluegray-500:#7c8ea7;--bluegray-600:#69798e;--bluegray-700:#576375;--bluegray-800:#444e5c;--bluegray-900:#323943;--purple-50:#f8f6fc;--purple-100:#dcd2f0;--purple-200:#c1aee4;--purple-300:#a68ad9;--purple-400:#8a66cd;--purple-500:#6f42c1;--purple-600:#5e38a4;--purple-700:#4e2e87;--purple-800:#3d246a;--purple-900:#2c1a4d;}</style><link rel="stylesheet" type="text/css" href="assets/primeng/resources/themes/bootstrap4-light-blue/theme.css" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="assets/primeng/resources/themes/bootstrap4-light-blue/theme.css"></noscript>
+  <link rel="stylesheet" type="text/css" href="assets/primeng/resources/primeng.min.css" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="assets/primeng/resources/primeng.min.css"></noscript>
+  <!-- Bootstrap CSS ============================================ -->
+  <style>:root{--blue:#007bff;--indigo:#6610f2;--purple:#6f42c1;--pink:#e83e8c;--red:#dc3545;--orange:#fd7e14;--yellow:#ffc107;--green:#28a745;--teal:#20c997;--cyan:#17a2b8;--white:#fff;--gray:#6c757d;--gray-dark:#343a40;--primary:#007bff;--secondary:#6c757d;--success:#28a745;--info:#17a2b8;--warning:#ffc107;--danger:#dc3545;--light:#f8f9fa;--dark:#343a40;--breakpoint-xs:0;--breakpoint-sm:576px;--breakpoint-md:768px;--breakpoint-lg:992px;--breakpoint-xl:1200px;--font-family-sans-serif:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";--font-family-monospace:SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;}*,::after,::before{box-sizing:border-box;}html{font-family:sans-serif;line-height:1.15;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;-ms-overflow-style:scrollbar;-webkit-tap-highlight-color:transparent;}body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";font-size:1rem;font-weight:400;line-height:1.5;color:#212529;text-align:left;background-color:#fff;}img{vertical-align:middle;border-style:none;}img{page-break-inside:avoid;}@page {size:a3;}body{min-width:992px!important;}</style><link rel="stylesheet" href="assets/css/bootstrap.min.css" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="assets/css/bootstrap.min.css"></noscript>
+  <!-- Fonts ============================================ -->
+  <link rel="stylesheet" href="assets/css/fonts.css" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="assets/css/fonts.css"></noscript>
+  <link rel="stylesheet" href="assets/fonts/kalpurush/kalpurush.css" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="assets/fonts/kalpurush/kalpurush.css"></noscript>
+  <!-- animate CSS ============================================ -->
+  <style>@charset "UTF-8";</style><link rel="stylesheet" href="assets/css/animate.css" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="assets/css/animate.css"></noscript>
+  <!-- normalize CSS ============================================ -->
+  <style>html{line-height:1.15;-webkit-text-size-adjust:100%;}body{margin:0;}img{border-style:none;}</style><link rel="stylesheet" href="assets/css/normalize.css" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="assets/css/normalize.css"></noscript>
+  <!-- meanmenu icon CSS ============================================ -->
+  <link rel="stylesheet" href="assets/css/meanmenu.min.css" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="assets/css/meanmenu.min.css"></noscript>
+  <!-- main CSS ============================================ -->
+  <style>html{color:#222;font-size:1em;line-height:1.4;}img{vertical-align:middle;}@media only screen and (min-width: 35em){}@media print,
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 1.25dppx),
+       (min-resolution: 120dpi){}@media print{*,*:before,*:after{background:transparent !important;color:#000 !important;box-shadow:none !important;text-shadow:none !important;}img{page-break-inside:avoid;}img{max-width:100% !important;}}</style><link rel="stylesheet" href="assets/css/main.css" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="assets/css/main.css"></noscript>
+  <!-- mCustomScrollbar CSS ============================================ -->
+  <link rel="stylesheet" href="assets/css/scrollbar/jquery.mCustomScrollbar.min.css" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="assets/css/scrollbar/jquery.mCustomScrollbar.min.css"></noscript>
+  <!-- metisMenu CSS ============================================ -->
+  <link rel="stylesheet" href="assets/css/metisMenu/metisMenu.min.css" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="assets/css/metisMenu/metisMenu.min.css"></noscript>
+  <!-- Component Stylesheet -->
+  <link rel="stylesheet" href="assets/css/component/web-header.css" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="assets/css/component/web-header.css"></noscript>
+  <link rel="stylesheet" href="assets/css/component/content.css" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="assets/css/component/content.css"></noscript>
+  <link rel="stylesheet" href="assets/css/component/header.css" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="assets/css/component/header.css"></noscript>
+  <link rel="stylesheet" href="assets/css/component/sidebar.css" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="assets/css/component/sidebar.css"></noscript>
+  <link rel="stylesheet" href="assets/css/component/form.css" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="assets/css/component/form.css"></noscript>
+  <link rel="stylesheet" href="assets/css/component/button.css" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="assets/css/component/button.css"></noscript>
+  <link rel="stylesheet" href="assets/css/component/archwizard.css" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="assets/css/component/archwizard.css"></noscript>
+  <style>@font-face{font-family:forum;src:url("/assets/fonts/fonts/forum/Forum-Regular.ttf");}@font-face{font-family:forum;src:url("/assets/fonts/fonts/kalpurush/kalpurushANSI.ttf");}@import '~handsontable/dist/handsontable.full.css';html,body{height:100%;font-family:'forum', -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, "Noto Sans", "Kalpurush", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !important;font-size:18px;font-weight:400;line-height:1;color:#051E34;}body{margin:0;font-family:'Roboto', -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, "Kalpurush", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";}img{max-width:100%;height:auto;}@media print{body{margin:10px;color:#000;background-color:#fff;}@page {size:auto;margin-top:0.5in;margin-bottom:0.5in;margin-left:0in;margin-right:0in;font-size:16pt;page-break-after:always;}html,body{height:100vh;margin:0 !important;padding:0 !important;overflow:hidden;}}</style><link rel="stylesheet" href="assets/css/style.css" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="assets/css/style.css"></noscript>
+  <link rel="stylesheet" href="assets/css/default.theme.css" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="assets/css/default.theme.css"></noscript>
+  <!-- responsive CSS ============================================ -->
+  <link rel="stylesheet" href="assets/css/responsive.css" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="assets/css/responsive.css"></noscript>
+  <style type="text/css">
+    div.loader {
+      position: absolute;
+      max-width: 45%;
+      max-height: 45%;
+      top: 50%;
+      left: 50%;
+      overflow: visible;
+    }
+
+    img.logo {
+      position: relative;
+      max-width: 100%;
+      max-height: 100%;
+      margin-top: -50%;
+      margin-left: -50%;
+    }
+  </style>
+  <link rel="manifest" href="manifest.webmanifest">
+  <meta name="theme-color" content="#1976d2">
+<link rel="stylesheet" href="styles.41d0113a3f2117d09d17.css" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="styles.41d0113a3f2117d09d17.css"></noscript></head>
+<body>
+  <app-root>
+    <div class="loader"><img class="logo" src="assets/images/index-loader.gif" alt="Loading..."></div>
+  </app-root>
+  <!-- jquery ============================================ -->
+  <script src="assets/js/vendor/jquery-1.12.4.min.js"></script>
+  <!-- HandsonTable -->
+  <script src="https://cdn.jsdelivr.net/npm/handsontable@12.2/dist/handsontable.full.min.js"></script>
+  <!-- modernizr JS ============================================ -->
+  <script src="assets/js/vendor/modernizr-2.8.3.min.js"></script>
+  <!-- popper JS ============================================ -->
+  <script src="assets/js/popper.min.js"></script>
+  <!-- bootstrap JS ============================================ -->
+  <script src="assets/js/bootstrap.min.js"></script>
+  <!-- wow JS ============================================ -->
+  <script src="assets/js/wow.min.js"></script>
+  <!-- meanmenu JS ============================================ -->
+  <script src="assets/js/jquery.meanmenu.js"></script>
+  <!-- sticky JS ============================================ -->
+  <script src="assets/js/jquery.sticky.js"></script>
+  <!-- mCustomScrollbar JS ============================================ -->
+  <script src="assets/js/scrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
+  <!-- metisMenu JS ============================================ -->
+  <script src="assets/js/metisMenu/metisMenu.min.js"></script>
+  <!-- highlight JS ============================================ -->
+  <!-- <script src="assets/js/highlight.js"></script> -->
+  <!-- app JS ============================================ -->
+  <!-- <script src="assets/js/app.js"></script> -->
+  <noscript>Please enable JavaScript to continue using this application.</noscript>
+<script src="runtime-es2015.eba55a2f3d0aadff8711.js" type="module"></script><script src="runtime-es5.eba55a2f3d0aadff8711.js" nomodule defer></script><script src="polyfills-es5.78d92f874069e0caf70b.js" nomodule defer></script><script src="polyfills-es2015.153d4ea810e98a805778.js" type="module"></script><script src="scripts.19abd965eb061d0b9b85.js" defer></script><script src="main-es2015.fdf06d5f905484f9bedf.js" type="module"></script><script src="main-es5.fdf06d5f905484f9bedf.js" nomodule defer></script>
+
+</body></html>
